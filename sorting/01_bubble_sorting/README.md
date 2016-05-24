@@ -1,4 +1,4 @@
-# Bubble sort
+# Bubble sort :sweet_drops:
 
 In the bubble sort, as elements are sorted they gradually "bubble" (or rise) to their proper 
 location in the array, like bubbles rising in a glass of soda. The bubble sort repeatedly 
@@ -7,3 +7,4 @@ if out of order.  Then the second and third elements are compared and swapped if
 This sorting process continues until the last two elements of the array are compared and swapped 
 if out of order.
 
+![Bubble sort](https://raw.githubusercontent.com/michaltakac/java-programming-questions/master/sorting/01_bubble_sorting/BubbleChart.gif)
