@@ -1,4 +1,4 @@
-# Bubble sort :sweet_drops:
+# Bubble sort :droplet:
 
 In the bubble sort, as elements are sorted they gradually "bubble" (or rise) to their proper 
 location in the array, like bubbles rising in a glass of soda. The bubble sort repeatedly 
