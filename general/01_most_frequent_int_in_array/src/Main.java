@@ -10,26 +10,32 @@ public class Main {
         Arrays.sort(numbers);
         System.out.println("Sorted array: " + Arrays.toString(numbers) + "\n");
 
-        // Starting values
+        // Let's assume first value is first int from array
+        // and since we will start looping through array from [1],
+        // we'll set previous to first number from array
         int popular = numbers[0];
         int previous = numbers[0];
+        // Starting values
         int count = 1;
         int maxCount = 1;
 
         for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] == previous) {
+                // Current number is same as previous, increment count!
+                // Most popular number stays the same
                 count++;
-                System.out.println("Count of this number is: " + count);
-                System.out.println("Most popular number so far: " + popular);
             } else {
-                System.out.println("Count of this number is: " + numbers[i]);
-
-                popular = numbers[i];
-                count = 1;
+                if (count > maxCount) {
+                    popular = numbers[i-1];
+                    maxCount = count;
+                } else {
+                    previous = numbers[i];
+                    count = 1;
+                }
             }
         }
 
-        return popular;
+        return count > maxCount ? numbers[numbers.length-1] : popular;
     }
 
     public static void main(String[] args) {
@@ -37,6 +43,6 @@ public class Main {
         // Print starting array
         System.out.println("Your array input: " + Arrays.toString(numbers) + "\n");
         int popular = getMostPpopular(numbers);
-        System.out.println("Most popular number from this array: " + popular);
+        System.out.println("Most popular number is: " + popular);
     }
 }
