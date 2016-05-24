@@ -7,9 +7,9 @@ I'm not currently studying for an interview, but I like to learn. I did not stud
 
 # Table of contents
 
-### General
+### [General](https://github.com/michaltakac/java-programming-questions/tree/master/general)
 
-1. [ ] Find the most frequent integer in an array
+1. [ ] [Find the most frequent integer in an array](https://github.com/michaltakac/java-programming-questions/tree/master/general/01_most_frequent_int_in_array)
 1. [ ] Find pairs in an integer array whose sum is equal to 10 (bonus: do it in linear time)
 1. [ ] Given 2 integer arrays, determine of the 2nd array is a rotated version of the 1st array. Ex. Original Array A={1,2,3,5,6,7,8} Rotated Array B={5,6,7,8,1,2,3}
 1. [ ] Write fibbonaci iteratively and recursively (bonus: use dynamic programming)
