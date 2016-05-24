@@ -8,7 +8,7 @@ public class Main {
      * @param numbers Array<Int> Numbers to sort
      * @param type String type of sorting (asc|desc)
      */
-    public static void BubbleSort(int[] numbers, String type) {
+    static int[] BubbleSort(int[] numbers, String type) {
         System.out.print("Your array input: " + Arrays.toString(numbers) +"\n\n");
         int i;
         // Setting flag to true to start sorting
@@ -40,11 +40,14 @@ public class Main {
         }
 
         // Print out sorted array
-        System.out.println("Sorted array: " + Arrays.toString(numbers));
+        return numbers;
     }
 
     public static void main(String[] args) {
+        int[] numbers = {34, 65, 1, 55, 98, 45};
+
         // Call bubble sort method
-        BubbleSort(new int[]{34, 65, 1, 55, 98, 45}, "desc");
+        int[] sortedArray = BubbleSort(numbers, "desc");
+        System.out.println("Sorted array: " + Arrays.toString(sortedArray));
     }
 }
